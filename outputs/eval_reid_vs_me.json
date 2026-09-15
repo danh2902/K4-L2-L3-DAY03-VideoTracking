@@ -1,0 +1,170 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "/content/Day3-Lab/outputs/model_reid_clip_01.txt",
+  "gt_file": "/content/Day3-Lab/annotations/clip_01/gt.txt",
+  "pred_label": "yolo26n.pt + BoT-SORT + ReID treatment",
+  "gt_label": "nhãn của bạn",
+  "metrics": {
+    "HOTA": 0.8298,
+    "DetA": 0.7724,
+    "AssA": 0.8918,
+    "LocA": 0.9247,
+    "IDF1": 0.9094,
+    "IDTP": 542,
+    "IDFP": 96,
+    "IDFN": 12,
+    "MOTA": 0.8051,
+    "MOTP": 0.9199,
+    "IDSW": 0,
+    "FP": 96,
+    "FN": 12,
+    "GT_boxes": 554,
+    "PRED_boxes": 638
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.9093959731543624,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.8050541516245487,
+        "required": 0.75,
+        "passed": true
+      },
+      "MOTP": {
+        "value": 0.9198505161890687,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [
+      {
+        "gt_track": 6,
+        "pred_tracks": [
+          29,
+          39
+        ],
+        "frames_each": {
+          "29": 81,
+          "39": 1
+        },
+        "gt_length": 88
+      }
+    ],
+    "partially_covered_gt_tracks": [],
+    "ghost_pred_tracks": [
+      {
+        "pred_track": 7,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          16,
+          116
+        ],
+        "length": 43
+      },
+      {
+        "pred_track": 27,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          106,
+          121
+        ],
+        "length": 16
+      },
+      {
+        "pred_track": 38,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          158,
+          178
+        ],
+        "length": 16
+      },
+      {
+        "pred_track": 9,
+        "reason": "đã có bbox trước khi track tham chiếu 4 xuất hiện",
+        "frames": [
+          55,
+          61
+        ],
+        "length": 7
+      },
+      {
+        "pred_track": 18,
+        "reason": "đã có bbox trước khi track tham chiếu 5 xuất hiện",
+        "frames": [
+          87,
+          90
+        ],
+        "length": 4
+      },
+      {
+        "pred_track": 17,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          85,
+          85
+        ],
+        "length": 1
+      },
+      {
+        "pred_track": 24,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          104,
+          104
+        ],
+        "length": 1
+      },
+      {
+        "pred_track": 26,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          105,
+          105
+        ],
+        "length": 1
+      },
+      {
+        "pred_track": 28,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          107,
+          107
+        ],
+        "length": 1
+      }
+    ],
+    "id_switches": [],
+    "loose_boxes": [
+      {
+        "frame": 139,
+        "gt_track": 3,
+        "pred_track": 3,
+        "iou": 0.547
+      },
+      {
+        "frame": 108,
+        "gt_track": 6,
+        "pred_track": 29,
+        "iou": 0.56
+      },
+      {
+        "frame": 109,
+        "gt_track": 6,
+        "pred_track": 29,
+        "iou": 0.597
+      }
+    ],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 16
+  }
+}
